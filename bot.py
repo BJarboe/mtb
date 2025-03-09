@@ -12,8 +12,7 @@ from time import sleep
 load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
 PERMISSIONS = os.getenv('PERMISSIONS')
-CHANNEL_ID = 725134189652869270
-
+CHANNEL_ID = os.getenv('CHANNEL_ID')
 class FileUploaderBot(Client):
     async def on_ready(self):
         print(f"Logged in as {self.user}")
